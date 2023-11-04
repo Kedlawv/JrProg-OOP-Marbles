@@ -22,9 +22,14 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // abstract to Look At Player and move to parrent class. Abstraction example
         Vector3 lookDirection = (player.transform.position - this.transform.position).normalized;
+        
+        // abstract out to AttackPlayer and make virtual
+        // override in the Boss class. Polymorfism example. Inheritance Example.
         enemyRigidBody.AddForce(lookDirection * speed);
 
+        // abstract out to OutOfBounds and move to parrent class
         if(this.transform.position.y < deathYPos)
         {
             Destroy(this.gameObject);

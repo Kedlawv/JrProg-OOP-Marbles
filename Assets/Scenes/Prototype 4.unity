@@ -314,7 +314,7 @@ MonoBehaviour:
   speed: 5
   hasPowerup: 0
   powerUpStreangth: 15
-  powerupIndicator: {fileID: 1284972609}
+  powerupIndicator: {fileID: 1284972613}
 --- !u!54 &621247428
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -633,6 +633,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
   m_PrefabInstance: {fileID: 1091300001}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1284972613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284972609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed15e48cf26ffd4b995fad9289919a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1345813316
 GameObject:
   m_ObjectHideFlags: 0
