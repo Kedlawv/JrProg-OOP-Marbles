@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         hasPowerup = false;
+        
+        // create a script for powerup indicator holding the Active bool and make this Encapsulation example
         powerupIndicator.SetActive(false);
     }
 
