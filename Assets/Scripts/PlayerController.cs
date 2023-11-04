@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private GameObject focalPoint;
     public bool hasPowerup;
     public float powerUpStreangth = 15;
-    public GameObject powerupIndicator;
+    public PowerUpIndicator powerupIndicator;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         float verticalInput = Input.GetAxis("Vertical");
         rigidBody.AddForce(focalPoint.transform.forward * verticalInput * speed);
-        powerupIndicator.transform.position = this.transform.position + new Vector3(0, -0.5f, 0);
+        powerupIndicator.Position = this.transform.position + new Vector3(0, -0.5f, 0);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         {
             hasPowerup = true;
             Destroy(other.gameObject);
-            powerupIndicator.SetActive(true);
+            powerupIndicator.Active = true;
             StartCoroutine(PowerupCountdownRoutine());
         }
     }
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
         hasPowerup = false;
         
         // create a script for powerup indicator holding the Active bool and make this Encapsulation example
-        powerupIndicator.SetActive(false);
+        powerupIndicator.Active = false;
     }
 
     private void OnCollisionEnter(Collision collision)
