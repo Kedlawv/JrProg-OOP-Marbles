@@ -33,6 +33,7 @@ public class EnemyController : MonoBehaviour
         return (player.transform.position - this.transform.position).normalized;
     }
 
+    // ABSTRACTION
     protected virtual void AttackPlayer()
     {
         Vector3 lookDirection = GetLookDirection();

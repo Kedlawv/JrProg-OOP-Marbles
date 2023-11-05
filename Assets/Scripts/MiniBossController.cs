@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class MiniBossController : EnemyController
 {
     public GameObject projectilePrefab;
     private bool shootingCoroutineStarted = false;
 
+    // POLIMORPHISM
     protected override void AttackPlayer()
     {
         base.AttackPlayer();
