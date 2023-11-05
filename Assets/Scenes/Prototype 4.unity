@@ -394,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4428908044626120, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4428908044626120, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_LocalScale.x
@@ -675,6 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1580096952148186898, guid: 7be79fc8fabfc1d46adfcd2c4b693c6b, type: 3}
+  miniBossPrefab: {fileID: 7701174492148053513, guid: 7679e59c4698ede41bcc15ca320e1356, type: 3}
   powerupPrefab: {fileID: 1329935586529501799, guid: 01e563a58e855814aa7881c50d9d20df, type: 3}
   enemyCount: 0
   waveEnemyCount: 1
@@ -691,7 +692,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1403545340
 PrefabInstance:
