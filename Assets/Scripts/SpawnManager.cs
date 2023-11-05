@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
+    public GameObject miniBossPrefab;
     public GameObject powerupPrefab;
 
     private float spawnRange = 9.0f;
@@ -34,6 +35,11 @@ public class SpawnManager : MonoBehaviour
         for(int i = 0; i < enemiesToSpawn; i++)
         {
             Instantiate(enemyPrefab, GenerateRandomSpawnPos(), enemyPrefab.transform.rotation);
+        }
+
+        if (waveEnemyCount > 2)
+        {
+            Instantiate(miniBossPrefab, GenerateRandomSpawnPos(), enemyPrefab.transform.rotation);
         }
     }
 
